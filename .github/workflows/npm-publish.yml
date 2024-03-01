@@ -12,5 +12,7 @@ jobs:
       - name:checkout      
         uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v3                                                   - run: npm ci
-      - run: npm run build --if present                                               - run: npm test
+        uses: actions/setup-node@v3                                                   
+        - run: npm ci
+        - run: npm run build --if present                                               
+        - run: npm test
